@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>mini book app</title>
+    </head>
+    <body>
+        <form action="http://localhost:8080/books" method="POST">
+            <label for="title">Title:</label><!-- the label tag specifies which input this text is referring to -->
+            <input type="text" name="title" id="title">
+            <br>
+            <label for="author">Author:</label>
+            <input type="text" name="author" id="author">
+            <br>
+            <label for="genre">Genre:</label>
+            <!--<input type="text" name="species" id="species">-->
+            <select name="genre" id="genre">
+                <option>Action and Adventure</option>
+                <option>Novel</option>
+                <option>Classic</option>
+                <option>Historical Novel</option>
+                <option>Graphic Novel</option>
+                <option>Mystery</option>
+                <option>Non-fiction</option>
+                <option>Science Fiction</option>
+                <option>Fantasy</option>
+            </select>
+            <br>
+            <label for="publishDate">Published Date:</label>
+            <input type="number" name="publishDate" id="publishDate">
+            <br>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
